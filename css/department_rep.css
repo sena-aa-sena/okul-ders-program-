@@ -1,0 +1,240 @@
+/*Header Section*/
+.logoutSection {
+    display: flex;
+    
+}
+.logoutSection a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 36px;
+    margin-left: 16px;
+}
+.userInfoName{
+    font-weight: 500;
+}
+.userInfoRole{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-muted);
+
+}
+.user-profile-circle{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #DBEAFE;
+    color: #2563EB;
+    font-weight: 500;
+}
+/* Sidebar Menu */
+.menu-items a{
+    gap: 16px;
+}
+/* Welcome Section */
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome-section p {
+    color: var(--text-muted);
+    margin-top: 8px;
+}
+/* Form Section */
+.addNewDepartmentForm{
+    max-height: 220px;
+    height: 100vh;
+    background: var(--white);
+    padding: 20px;   
+    margin: 30px 0 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+.form-titles{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+.form-row{
+    display: grid;
+    gap: 20px;
+}
+.form-row.two-columns{
+    grid-template-columns: 1fr 1fr;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.form-group label{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+.form-actions {
+  display: flex;
+  justify-content: flex-start;
+}
+.addNewDepartmentForm input{
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    background: var(--white);
+    outline: none;
+    transition: border-color 0.2s;
+}
+.addNewDepartmentBtn{ /* icon eklenecek */
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.addNewDepartmentBtn i{
+    margin-right: 4px;
+}
+/* Department Table */
+.main-content {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-body {
+    width: 100%;
+}
+.table-container{
+    background: var(--white);
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+.table-header{
+    padding: 20px 20px 0 20px;
+    
+}
+.table-header h3{
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 18px;
+}
+.table-header p{
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 500;
+}
+.department-table{
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+.department-table thead tr{
+    background: #f9fafb;
+    border-top: 1px solid #e2e8f0;
+}
+.department-table thead td{
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+.department-table tbody tr td:nth-child(2){
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 14px;
+}
+.department-table tbody tr td:nth-child(3){
+    color: var(--text-muted);
+    font-weight: 500;
+}
+.department-table th {
+  text-align: left;
+  padding: 14px 16px;
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+.actions{
+    text-align: right;
+}
+.action-icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    color: var(--text-muted);
+}
+.department-table td:last-child,
+.department-table th:last-child {
+  text-align: right;
+  width: 1%;
+  white-space: nowrap;
+}
+.department-table td{
+    padding: 14px  16px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #374151;
+}
+.badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.badge-blue {
+    background: #DBEAFE;
+    color: #2563EB;
+}
+.table-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: var(--bg-color);
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.table-bottom p{
+    color: var(--text-muted);
+    font-size: 13px;
+}
+.tableButtons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 14px;
+}
+.tableButtons button{
+    padding: 6px 8px;
+    background-color: var(--bg-color);
+    border-color: #E5E7EB;
+    border-radius: 8px;
+    color: var(--text-muted);
+    font-weight: 500;
+    box-shadow: none;
+    outline: none;
+}

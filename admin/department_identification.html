@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Paneli</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/department_rep.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <div class="sidebar-header">Kampüs Yön.</div>
+        <nav class="menu-items">
+          <a href="#" class="active"><i class="fa-solid fa-user-group"></i><span>Kullanıcı Listesi</span></a>
+          
+          <a href="user_add.html"><i class="fa-solid fa-user-plus"></i><span>Yeni Kullanici Ekle</span></a>
+          
+          <a href="department_identification.html"><i class="fas fa-building"></i><span>Fakülte & Bölüm Ayarları</span></a>
+          
+          <a href="#"><i class="fa-solid fa-gear"></i><span>Ayarlar</span></a>
+          
+          <a href="../index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Çıkış yap</span></a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <header class="header">
+          <h3>Kullanıcı Yönetimi</h3>
+          <div class="logoutSection">
+            <div class="user-profile-circle">
+              SB
+            </div>
+          
+          <div class="user-info">
+            <span class="userInfoName">Görevli İsmi</span>
+            <span class="userInfoRole">Rolü</span>
+          </div>
+          <a href="../index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+          </div>
+        </header>
+
+        <div class="content-body">
+            <div class="welcome-section">
+            <div class="welcome-text"> 
+              <h3>Department Identification</h3>
+              <p>Manage university departments and their identification codes</p>
+            </div>
+          </div>
+          <form class="addNewDepartmentForm">
+            <h3 class="form-titles">Add New Department</h3>
+            <div class="form-row two-columns">
+                <div class="form-group">
+                <label for="departmentName">Department Name</label>
+                <input type="text" id="departmentName" placeholder="e.g., Computer Science">
+                </div>
+                <div class="form-group">
+                    <label for="departmentCode">Department Code</label>
+                    <input type="number" id="departmentCode" placeholder="e.g., CS">
+                </div>
+            </div>
+            <div class="form-actions">
+                <button class="addNewDepartmentBtn">
+                    <i class="fa-regular fa-floppy-disk"></i> Save Department</button>
+            </div>
+          </form>
+          <div class="table-container">
+            <div class="table-header">
+            <h3>Department List</h3>
+            <p>View and manage all university departments</p>
+            </div>
+            <table class="department-table">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Department Name</th>
+                        <th>Date Added</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="badge badge-blue">CS</span></td>
+                        <td>Computer Science</td>
+                        <td>2024-01-15</td>
+                        <td class="actions">
+                            <div class="action-icons">
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-regular fa-pen-to-square"></i>
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-blue">MATH</span></td>
+                        <td>Mathematics</td>
+                        <td>2024-01-15</td>
+                        <td class="actions">
+                            <div class="action-icons">
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-regular fa-pen-to-square"></i>
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-blue">PHYS</span></td>
+                        <td>Physics</td>
+                        <td>2024-01-15</td>
+                        <td class="actions">
+                            <div class="action-icons">
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-regular fa-pen-to-square"></i>
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-blue">CHEM</span></td>
+                        <td>Chemistry</td>
+                        <td>2024-01-15</td>
+                        <td class="actions">
+                            <div class="action-icons">
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-regular fa-pen-to-square"></i>
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-blue">BIO</span></td>
+                        <td>Biology</td>
+                        <td>2024-01-15</td>
+                        <td class="actions">
+                            <div class="action-icons">
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-regular fa-pen-to-square"></i>
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-blue">ENG</span></td>
+                        <td>English Literature</td>
+                        <td>2024-01-15</td>
+                        <td class="actions">
+                            <div class="action-icons">
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-regular fa-pen-to-square"></i>
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-blue">HIST</span></td>
+                        <td>History</td>
+                        <td>2024-01-15</td>
+                        <td class="actions">
+                            <div class="action-icons">
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-regular fa-pen-to-square"></i>
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-blue">ECON</span></td>
+                        <td>Economics</td>
+                        <td>2024-01-15</td>
+                        <td class="actions">
+                            <div class="action-icons">
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-regular fa-pen-to-square"></i>
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-blue">PSY</span></td>
+                        <td>Psychology</td>
+                        <td>2024-01-15</td>
+                        <td class="actions">
+                            <div class="action-icons">
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-regular fa-pen-to-square"></i>
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge badge-blue">ART</span></td>
+                        <td>Fine Arts</td>
+                        <td>2024-01-15</td>
+                        <td class="actions">
+                            <div class="action-icons">
+                                <i class="fa-regular fa-eye"></i>
+                                <i class="fa-regular fa-pen-to-square"></i>
+                                <i class="fa-regular fa-trash-can"></i>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="table-bottom">
+                <p>Showing <b>1-10</b> of <b>10</b> departmens</p>
+                <div class="tableButtons">
+                    <button>Previous</button>
+                    <button>Next</button>
+                </div>
+            </div>
+          </div>
+          </div>

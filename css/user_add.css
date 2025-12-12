@@ -1,0 +1,156 @@
+.logoutSection {
+    display: flex;
+    
+}
+.logoutSection a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 36px;
+    margin-left: 16px;
+}
+.userInfoName{
+    font-weight: 500;
+}
+.userInfoRole{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-muted);
+
+}
+.user-profile-circle{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #DBEAFE;
+    color: #2563EB;
+    font-weight: 500;
+}
+/* Sidebar Menu */
+.menu-items a{
+    gap: 16px;
+}
+/*----------------------- Form section -----------------------------*/
+.userAdd-form-container{
+    width: 100%;
+    max-width: 750px;
+    margin: 10px auto;
+    padding: 30px;
+    background: var(--white);
+    border-radius: 8px;
+}
+.userAdd-form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.form-titles{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: -20px;
+  color: var(--secondary-color);
+}
+.form-row{
+    display: grid;
+    gap: 20px;
+}
+.form-row.two-columns{
+    grid-template-columns: 1fr 1fr;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.form-group label{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+.roleSelect{
+    margin-bottom: -12px;
+}
+.userAdd-form input,
+.userAdd-form select{
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    background: var(--white);
+    outline: none;
+    transition: border-color 0.2s;
+}
+.userAdd-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: var(--white) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%239CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>')
+    no-repeat right 16px center;
+    background-size: 22px;
+    padding-right: 46px;
+    border-radius: 8px;
+}
+.userAdd-form input:focus,
+.userAdd-form select:focus {
+  border-color: var(--text-muted)
+}
+.userAdd-form select:disabled {
+  background: var(--white);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+.info-text {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+.password-group {
+    display: flex;
+    flex-direction: column;
+}
+.password-group .password-wrapper {
+    width: 70%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.password-wrapper input{
+    width: 100%;
+    padding-right: 40px;
+}
+.toggle-password{
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--text-muted);
+}
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.createBtn{ /* icon eklenecek */
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.createBtn i{
+    margin-right: 4px;
+}
+
