@@ -1,7 +1,6 @@
 /* --- style.css (GENEL ANAYASA) --- */
 
 /* 1. DEĞİŞKENLER (Renk Paleti) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 :root {
     --primary-color: #2563EB;   /* Ana Mavi - Projenin Rengi */
     --primary-light: #EFF6FF;   /* Açık Mavi (Hover için) */
